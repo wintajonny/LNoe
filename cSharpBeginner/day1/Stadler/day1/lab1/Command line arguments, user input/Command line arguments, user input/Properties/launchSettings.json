@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Command line arguments, user input": {
+      "commandName": "Project",
+      "commandLineArgs": "1 3"
+    }
+  }
+}

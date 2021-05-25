@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqSample", "LinqSample\LinqSample.csproj", "{9E7730D7-EA61-4AA6-B02B-EE030DEB0D36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLib", "..\DataLib\DataLib.csproj", "{3A670383-331B-49A4-A384-A6F86AB7E688}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E7730D7-EA61-4AA6-B02B-EE030DEB0D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7730D7-EA61-4AA6-B02B-EE030DEB0D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7730D7-EA61-4AA6-B02B-EE030DEB0D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7730D7-EA61-4AA6-B02B-EE030DEB0D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A670383-331B-49A4-A384-A6F86AB7E688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A670383-331B-49A4-A384-A6F86AB7E688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A670383-331B-49A4-A384-A6F86AB7E688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A670383-331B-49A4-A384-A6F86AB7E688}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAA6D240-E894-4920-B390-3895D5727DC1}
+	EndGlobalSection
+EndGlobal

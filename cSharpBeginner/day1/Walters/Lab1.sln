@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1", "Lab1\Lab1.csproj", "{D2367BAE-11BD-4EA3-9F5B-7FEDEB6AD696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLight", "Ampel\Ampel.csproj", "{423848FD-938A-4F2B-A5CA-4EE3B9C6C223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangesAndIndices", "RangesAndIndices\RangesAndIndices.csproj", "{4FC96A29-48F2-4EB9-9FFE-02FBA66B2551}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2367BAE-11BD-4EA3-9F5B-7FEDEB6AD696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2367BAE-11BD-4EA3-9F5B-7FEDEB6AD696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2367BAE-11BD-4EA3-9F5B-7FEDEB6AD696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2367BAE-11BD-4EA3-9F5B-7FEDEB6AD696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423848FD-938A-4F2B-A5CA-4EE3B9C6C223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423848FD-938A-4F2B-A5CA-4EE3B9C6C223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423848FD-938A-4F2B-A5CA-4EE3B9C6C223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423848FD-938A-4F2B-A5CA-4EE3B9C6C223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC96A29-48F2-4EB9-9FFE-02FBA66B2551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC96A29-48F2-4EB9-9FFE-02FBA66B2551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC96A29-48F2-4EB9-9FFE-02FBA66B2551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC96A29-48F2-4EB9-9FFE-02FBA66B2551}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C9321A8-B16D-4D23-9B58-C67F826C15F3}
+	EndGlobalSection
+EndGlobal

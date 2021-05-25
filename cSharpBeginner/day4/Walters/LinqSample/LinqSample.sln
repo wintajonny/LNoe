@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqSample", "LinqSample\LinqSample.csproj", "{691FF0EA-141C-4EFD-B36C-40DCE37ED7DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLib", "..\..\DataLib\DataLib.csproj", "{70D9413A-2D49-4977-A150-5FC399B25D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{691FF0EA-141C-4EFD-B36C-40DCE37ED7DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691FF0EA-141C-4EFD-B36C-40DCE37ED7DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691FF0EA-141C-4EFD-B36C-40DCE37ED7DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691FF0EA-141C-4EFD-B36C-40DCE37ED7DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D9413A-2D49-4977-A150-5FC399B25D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D9413A-2D49-4977-A150-5FC399B25D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D9413A-2D49-4977-A150-5FC399B25D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D9413A-2D49-4977-A150-5FC399B25D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {437BEADD-12E0-450E-94C8-15B0F94DC290}
+	EndGlobalSection
+EndGlobal

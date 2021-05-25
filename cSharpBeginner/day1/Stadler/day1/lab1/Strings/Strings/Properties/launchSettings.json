@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Strings": {
+      "commandName": "Project",
+      "commandLineArgs": "hello my name is jonas"
+    }
+  }
+}
