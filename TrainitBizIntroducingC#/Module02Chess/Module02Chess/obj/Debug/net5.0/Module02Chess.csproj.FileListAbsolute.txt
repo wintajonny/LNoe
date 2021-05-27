@@ -1,0 +1,16 @@
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\bin\Debug\net5.0\Module02Chess.exe
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\bin\Debug\net5.0\Module02Chess.deps.json
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\bin\Debug\net5.0\Module02Chess.runtimeconfig.json
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\bin\Debug\net5.0\Module02Chess.runtimeconfig.dev.json
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\bin\Debug\net5.0\Module02Chess.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\bin\Debug\net5.0\ref\Module02Chess.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\bin\Debug\net5.0\Module02Chess.pdb
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.csprojAssemblyReference.cache
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.AssemblyInfoInputs.cache
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.AssemblyInfo.cs
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.csproj.CoreCompileInputs.cache
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\ref\Module02Chess.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.pdb
+C:\github\LNoe\TrainitBizIntroducingC#\Module02Chess\Module02Chess\obj\Debug\net5.0\Module02Chess.genruntimeconfig.cache

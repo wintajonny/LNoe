@@ -1,0 +1,16 @@
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\bin\Debug\net5.0\Module1Lab02.exe
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\bin\Debug\net5.0\Module1Lab02.deps.json
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\bin\Debug\net5.0\Module1Lab02.runtimeconfig.json
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\bin\Debug\net5.0\Module1Lab02.runtimeconfig.dev.json
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\bin\Debug\net5.0\Module1Lab02.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\bin\Debug\net5.0\ref\Module1Lab02.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\bin\Debug\net5.0\Module1Lab02.pdb
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.csprojAssemblyReference.cache
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.AssemblyInfoInputs.cache
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.AssemblyInfo.cs
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.csproj.CoreCompileInputs.cache
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\ref\Module1Lab02.dll
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.pdb
+C:\github\LNoe\TrainitBizIntroducingC#\Module1Lab02\Module1Lab02\obj\Debug\net5.0\Module1Lab02.genruntimeconfig.cache
