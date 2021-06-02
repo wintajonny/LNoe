@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "HostSample": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "WSL-HostSample": {
+      "commandName": "WSL2",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "distributionName": "Ubuntu-20.04"
+    }
+  }
+}
