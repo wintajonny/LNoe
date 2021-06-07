@@ -1,0 +1,102 @@
+#ASP.Net MVC Core CSharp          mit Roman Gruber
+
+##.Net Framework Versionen
+
+## Einführung ASP.Net
+
+alpine - linux docker images (benutzt Roman G selbst lieber) 
+
+
+Connected Services: Extensions
+Dependencies: NuGet Packages, Analyzers (NuGet Server für größere Projekte/Firmen, der die Packages zwischenspeichert) (BaGet-NuGet Server)
+
+appsettings.json - Konfiguration für Applikation
+1. Logging
+2. AllowedHosts: (wer darf auf die Webseite zugreifen)
+
+app.UseRouting();
+
+app. UseEndPoints(endpoints => {});
+-> endpoints.MapGet("/", async context => { await });
+
+"/favicon.ico" oder andere MiddleWare
+
+
+startup.cs ändern ==> großer aufwand
+
+middleware bei app.Use()
+
+
+## Razor Pages
+
+wwwroot => static files
+pages => razor pages
+
+HSTS: https strict transport security => über die Webseite darf nur mit https kommuniziert werden. 
+app.UseHttpsRedirection(); spielt mit HSTS zusammen
+ ==> entweder alles umleiten auf https oder bei :80 nicht antworten
+ 
+app.UseStaticFiles(); ==> schaut im wwwroot ob die abgefragte Datei dort zu finden ist und gibt sie zurück falls vorhanden (sonst übernimmt das Routing)
+
+
+@page ==> zeigt dass das eine razor page ist
+@model <Datentyp> ==> 
+@{
+  //C# code block
+  
+}
+
+layout page ==> grunddesign von den Razor Pages (_ViewStart.cshtml)
+Wenn man die layout page nicht haben will: 
+@{
+  Layout = "";
+}
+
+/PAges
+/Pages/shared
+/views/shared
+--> werden nach layout views durchsucht
+
+csharp in cshtml ==> @Datetime.Now.Year
+
+Tag Helper: <asp-page="/Privacy">Privacy     wandelt /Privacy in den Link zur Page Privacy.cshtml im Pages Ordner um
+
+Razor Kommentar: (bei normalen Kommentaren wird der Razor Code ausgeführt)
+@*
+*@
+
+Funktionalität der Seite sollte in Model Classen sein!!!!
+OnGet() --> Get Request
+OnPut() --> Put Request
+OnDelete() --> ...
+
+@Model.Property (z.B. Model.Greeting)
+
+Request.Query["name"];
+?name=Roman                           in der url hinzufügen
+
+<script> usw. wird automatisch html escaped
+
+
+   //[FromQuery] string name   --> Darf nur vom Query Parameter genommen werden
+                //= "Unknown"  --> Default wert
+OnGet(string name){
+  ...
+}
+
+Unit tests erstellen!
+HTML changes manuell testen!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
