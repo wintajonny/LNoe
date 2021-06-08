@@ -58,9 +58,14 @@ Controller entscheidet anhand von url wo man hin kommt
 Views müssen im eingenen Views Folder sein
 
 
+Controller:
+HomeController --> Home --> muss von Controller ableiten und einen funktionierenden Constructor besitzen.
 
+url /index --> Index Methode wird aufgerufen
+Muss immer ein ViewResult zurückliefern
+Sucht View im Ordner Views/Home/Index.cshtml                     //weil es vom Home-Controller gerufen wurde mit GetIndex
 
-
+alle daten die ausgetauscht werden sollen werden in ein ErrorViewModel gepackt
 
 
 
