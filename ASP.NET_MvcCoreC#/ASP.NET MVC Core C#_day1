@@ -1,0 +1,81 @@
+##im html code:
+
+
+@if(string.isNullOrEmpty(Model.Greeting)){                  //kann auch im Model mit bool ShowGreeting ersetzt werden
+  <ul>
+    @for (int i = 0; i < Model.Greeting.Length; i++)
+    {
+      //var x = i * 2;
+
+      <li>@Model.Greeting[i]</li>
+    }
+  </ul>
+}
+
+##normalen string ausgeben im cshtml:
+
+<text>Nächstes Zeichen:</text>
+
+app.UseStaticFiles();                                     //webserver kann statische dateien anzeigen
+
+//es fehlt aber noch der wwwroot folder --> erstellen
+//html file hinzufügen    /<dateiname>.html
+
+
+Dependency Injection wenn Unit tests erstellt werden sollen
+
+services.AddSingleton()     //einmal für das ganze Programm, 
+         AddScoped()
+         AddTransient()     //immer wieder angelegt wenn es gebraucht wird
+
+             Service    , Implementierung
+AddSingleton<ICustomerDb, CustomerDb>()
+
+
+Solution --> add new Project --> Unit Test Project (NUnit bei Roman) --> gleicher Name mit .Test dahinter mit gleichem Target Framework
+
+Jede Klasse eine eigene Test klasse!
+
+Setup code: Vor ausführen jedes Unittests ausgeführt
+
+//Arrange
+Objecte Anlegen
+//Act
+Funktionsaufruf (üblicherweise)
+//Assert
+Bewerten
+
+
+ProjectReference auf zu testende klasse
+MockObject: NuGet Package bei NUnit : NSubsitute
+ICustomerDB db = NSubstitute.Substitute.For<ICustomerDb>();
+
+#Logger
+ASP.Net Core WEb app (model-view-controller)
+
+MapControllerRoute: 
+Controller entscheidet anhand von url wo man hin kommt
+Views müssen im eingenen Views Folder sein
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
