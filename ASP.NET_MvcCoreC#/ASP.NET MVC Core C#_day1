@@ -67,6 +67,34 @@ Sucht View im Ordner Views/Home/Index.cshtml                     //weil es vom H
 
 alle daten die ausgetauscht werden sollen werden in ein ErrorViewModel gepackt
 
+Trennung "Schönheitsfehler": View akzeptiert irgend ein object
+z.B. wenn man einen String mitgibt kann er nicht mit dem ErrorViewModel gematched werden
+(Polyphormy ist ok)
+
+Controller Order: Rechtsklick --> Add Controller --> MCV Controller Empty: CommentController.cs
+Logging hinzufügen:
+private readonly ILogger _Logger;
+public CommentController (ILogger<CommentController> logger){
+  _Logger = logger;
+}
+
+Interface hinzufügen: ICommentStore.cs //public setzen
+
+Model: Add class: CommentViewModel.cs
+
+view soll nur aus dem hauptspeicher des webservers arbeiten
+Entsprechende Unterordner für eigene Klassen
+
+ValidateAntiForgeryToken
+Formular OverPosting: mit den Formulardaten andere Daten hinzufügen
+
+
+
+
+
+
+
+
 
 
 
