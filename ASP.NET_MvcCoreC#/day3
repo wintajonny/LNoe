@@ -13,7 +13,7 @@ isValid überschreiben bei eigenen Validierern (Validationattribute)
 public string UserName [Get;set;]
 
 
-[Required()]
+[Required(ErrorMessage O "The value for {0} is required!")]
 [MaxLength(1024)
 [Display(Prompt = "Nickname", Name="Nichname", Description = "Your nickname for the comment")]                  //Prompt = Wasserzeichen im Input
 public string Messaage [Get;set;]
@@ -43,6 +43,28 @@ Section anlegen mit:
 }
 
 wenn die section nicht mit RenderSection geholt wird verschwindet der Inhalt einfach
+
+
+
+
+[DataType(DataType.Password)]
+
+@HTML.EditorFor(x => x.Message)
+
+manage user secrets
+
+libman.json
+partial view --> 
+
+
+View Components --> wie partial Views aufgestellt
+Klasse für View Component:
+- muss entweder von View Component Klasse abgleiten
+- muss auf ViewComponent enden
+- oder muss als View Component gekennzeichnet werden
+
+ableiten --> InvokeAsync überschreiben
+
 
 
 
