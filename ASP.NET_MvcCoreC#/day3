@@ -1,0 +1,64 @@
+#Ínput validation
+
+Im NewCommentViewModel
+
+using System.ComponentModel.DataAnnotations;
+
+isValid überschreiben bei eigenen Validierern (Validationattribute)
+
+
+
+[Required()]
+[MaxLength(80)
+public string UserName [Get;set;]
+
+
+[Required()]
+[MaxLength(1024)
+[Display(Prompt = "Nickname", Name="Nichname", Description = "Your nickname for the comment")]                  //Prompt = Wasserzeichen im Input
+public string Messaage [Get;set;]
+
+
+bei Controller:
+if(Modelstate.isvalid)                                //nicht vergessen!!!!!
+
+Validierung wird im html als data-val eingebettet.
+
+###BenutzerAusgabe bei Validierungsfehler:
+
+<span asp-validationfor="Message"></span>         //für inputs
+
+<div asp-validation-summary="All"></div>
+
+
+
+
+@RenderBody()
+@RenderSection("Scripts", required false)         //falls true: laufzeitfehler
+damit kann man mehrere Renders machen
+
+Section anlegen mit:
+@section Scripts{
+  ... eigene scripts
+}
+
+wenn die section nicht mit RenderSection geholt wird verschwindet der Inhalt einfach
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
