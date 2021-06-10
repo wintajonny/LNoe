@@ -1,0 +1,134 @@
+#validation
+
+##im wwwroot/js/site.js       um eine eigene Validierung hinzuzufügen
+
+//werden nur in seiten geladen wo validation notwendig ist
+if (jQuery.validator) {
+    jQuery.validator.addMethod("customValidation",
+        function (value, element, param) {
+            if (value == "OK")
+                return true;
+            //...
+            return false;
+        });
+
+    jQuery.validator.unobtrusive.adapters.addBool("customValidation");
+
+}
+
+
+##MyCustomValidationAttribute
+
+namespace HelloMVCSample.Attributes
+{
+    public class MyCustomValidationAttribute : ValidationAttribute, IClientModelValidator
+    {
+        public void AddValidation(ClientModelValidationContext context)
+        {
+            context.Attributes.Add("data-val", "true");
+            context.Attributes.Add("data-val-customValidation", "Dummy error: not OK!");
+        }
+    }
+}
+
+Und dann im ViewModel
+//NameSpace hinzufügen
+        [MyCustomValidation()]
+
+
+
+#Entitity Framework
+
+Manage NuGet Packages: Microsoft.EntityFrameworkCore (3.16)
+                                                    .SqlServer (3.16)
+
+
+
+Data Ordner im HauptVerzeichnis mit einem Modell (Klasse) von CommentItem (wenn möglich ableiten von CommentItem)
+
+CommentCOntext erzeugen und von Microsoft.EntityFrameworkCore.DbContext ableiten
+Abfragen werden damit durchgeführt und dann wieder verworfen
+//Minimum, was man einfügen muss (DbSet)
+public class CommentContext : Microsoft.EntityFrameworkCore.DbContext
+    {
+        public Microsoft.EntityFrameworkCore.DbSet<DBCommentItem> Comments { get; set; }
+    }
+
+//ein kontext soll sich mit einer Klasse befassen (Comments)
+
+##in Startup.cs
+
+            //services.AddEntityFrameworkSqlServer();
+            oder
+            services.AddDbContext<Data.CommentContext>();     //besser ist das
+
+
+## im commentstore.cs
+private readonly CommentContext _Context;
+
+
+        public CommentStore(Data.CommentContext context)
+        {
+            _Context = context;
+        }
+
+Probleme: Context sollte als single use context verwendet werden
+-->
+CommentStore als Transient!!!!
+
+
+Error bei zugriff:
+--> 
+//im commentContext
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer("server=.;database=comments;integrated security=sspi");
+        }
+       
+
+//obere Zeile ersetzen mit:
+            optionsBuilder.UseSqlServer(@"Data Source=(localdb)/MSSQLLocalDB;Initial Catalog=comments;Integrated Security=True");
+
+Query_1.sql ===> 
+
+Code First: Zuerst code schreiben und db automatisch erstellen lassen!
+
+View -> Other Windows -> Package Manager Console
+Add-Migration -Name "InitialState
+
+#Async
+//ICommentStore:
+Task<CommentItem> CreateCommentAsync (string username, string message);
+
+
+#Tag-Helper
+
+Folder TagHelpers:
+Tag Helper Class ==> ContactTagHelper.cs
+override Process(TagHelperContext context, TagHelperOutput output){
+  output.Tagname="a";
+  output.Attributes.SetAttribute("href","mailto:xxxx@yyy.zzz");
+  output.preContent.Append("Contact us!");
+}
+
+File new Projekt --> Blazor Web Assembly dotnet 3.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
