@@ -1,0 +1,53 @@
+##ASP.NET Core web app (ModelViewController)
+
+
+AuthenticationType: Windows
+
+###im launchsettings.json:
+{
+  "iisSettings": {
+    "windowsAuthentication": true,
+    "anonymousAuthentication": false,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:3593",
+      "sslPort": 44303
+    }
+  },
+
+OAuth2 = Open Authentication 2
+-> erstellt Token/Ticket
+-> Server prüft Ticket und user gilt als angemeldet
+-> arbeitet mit claims (z.B. Alter)
+
+OpenIDConnect (Azure AD, Google, Facebook, Twitter,...
+-> login using 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
