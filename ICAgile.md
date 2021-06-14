@@ -84,7 +84,7 @@ The Guilded Rose -> Application ohne tests
 Pair testing mit stefan zapf
 
 
-
+https://marketplace.visualstudio.com/items?itemName=FortuneNgwenya.FineCodeCoverage
 
 
 
