@@ -18,7 +18,7 @@ Centralized (SVN, Tfs)
 ### Github Actions
 .gituhub/workflows/main.yml:
 
-name: CI Pipeline
+    name: CI Pipeline
 
     on: [push]
 
