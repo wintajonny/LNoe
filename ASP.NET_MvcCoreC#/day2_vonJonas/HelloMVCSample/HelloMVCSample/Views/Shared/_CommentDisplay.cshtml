@@ -1,0 +1,31 @@
+﻿@model HelloMVCSample.Models.CommentViewModel
+
+<div>
+    <small>@ViewData["PageTitle"]</small>
+    @{ ViewData["PageTitle"] = "Dummy!"; }
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Posted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Posted)
+        </dd>
+    </dl>
+    <small>@ViewData["PageTitle"]</small>
+</div>
+<!--<div>-->
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <!--<a asp-action="Index">Back to List</a>
+</div>-->

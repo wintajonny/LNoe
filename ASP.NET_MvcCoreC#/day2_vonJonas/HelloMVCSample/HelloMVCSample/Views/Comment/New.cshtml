@@ -1,0 +1,26 @@
+﻿@model NewCommentViewModel
+@{
+}
+<form method="post" asp-action="New">
+    <div class="mb3">
+        <label asp-for="UserName" class="form-label">Username:</label>
+        @*<input type="text" class="form-control" id="username" name="username" maxlength="80" />*@
+        <input asp-for="UserName" class="form-control" />
+        <span class="alert-danger" asp-validation-for="UserName"></span>
+    </div>
+    <div class="mb3">
+        <label asp-for="Message" class="form-label">Message:</label>
+        @*<input type="text" class="form-control" id="message" name="message" maxlength="1024"/>*@
+        @Html.EditorFor(x=>x.Message)
+        @*<input asp-for="Message" class="form-control" />*@
+        <span class="alert-danger" asp-validation-for="Message"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Comment now!</button>
+    <div asp-validation-summary="All"></div>
+</form>
+
+@section Scripts
+{
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

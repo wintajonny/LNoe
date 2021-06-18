@@ -1,0 +1,35 @@
+﻿@model CommentListViewModel
+@{
+}
+
+@if (Model.Comments.Any())
+
+{
+    <h4>Most recent @Model.MostRecent comments</h4>
+    <ul>
+        @{
+            ViewData["PageTitle"] = "Index";
+        }
+        @foreach (var item in Model.Comments.OrderBy(x => x.Posted))
+        {
+            <li title="@item.Posted">
+
+
+                <partial name="_CommentDisplay" model="item" />
+
+                @*@{
+
+
+                     await Html.RenderPartialAsync("_CommentDisplay", item);
+                }*@
+                @*@await Html.PartialAsync("_CommentDisplay",item)*@
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <h4>No comments available!</h4>
+}
+
+<p>To comment click <a asp-action="New">here</a>...</p>
