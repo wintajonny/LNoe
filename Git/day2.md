@@ -62,15 +62,15 @@ Großes repo Vorteile:
 Pick commits from branches instead of the complete branch
 
 Wenn nicht alles sinnvoll ist aber einige commits doch wichtig sind können sie herausgepickt werden
-``
+```
 git cherry-pick "commit"
-``
+```
 
 
 ## Undoing
 Wenn im commit zb. eine Datei vergessen wurde
 
-``
+```
 //Add some things to previous commits (or change commit message)
 git commit -amend -m "new message"
 
@@ -95,31 +95,31 @@ git commit --amend
 
 //revert pushed commits           //sollte vermieden werden
 git revert c4711c
-``
+```
 
 ## Submodule
 Wenn andere Projecte in einem repo verwendet werden
 
-``
+```
 git submodule add "linktorepo"
 
 
 //clone submodules from a repo
 git clone --recurse-submodules mainproject
 git submodule update--init (if recurse-submodule was not used)
-``
+```
 
 # Git Large File Storage (LFS)
 für größere dateien (binärdateien)
 
-``
+```
 git lfs install
 
 git lfs track "*.psf"
 
 git add .gitattributes
 
-``
+```
 
 # Virtual File System for Git
 
