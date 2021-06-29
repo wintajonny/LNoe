@@ -1,6 +1,6 @@
-#GIT
+# GIT
 
-##Git Configuration
+## Git Configuration
 
 git config --global user.name "wintajonny"
 git config --global user.email thomas.winter0211@gmail.com"
@@ -9,26 +9,26 @@ git config -global init.defaultBranch main
 
 git config -l --global                            //zeigt alle configurationen
 
-##Für Hilfe
+## Für Hilfe
 
 git --help
 git <command> --help
 //bei -h (statt --help) wird es in der console angezeigt
 
 
-#States
+# States
 
 git init im folder erstellt ein .git
 
-##Untracked
+## Untracked
 noch nicht geadded
 
-##Tracked
+## Tracked
 geadded aber noch nicht committed
 
 
 
-#Best Practices
+## Best Practices
 
 - oft committen
 - bevor die commits auf den server gespeichert werden kann man rebase/squash verwenden
@@ -36,7 +36,7 @@ geadded aber noch nicht committed
 - keine binären Dateien ins repository
 
 
-#Git Ignore
+# Git Ignore
 Dateien welche nicht ins repo sollen ins .gitignore schreiben
 (github.com/github/gitignore)
 
@@ -65,12 +65,12 @@ git diff <commit id1> commit id2>
   
   
 
-#Delta Based vs Snapshot  
+# Delta Based vs Snapshot  
 bei delta werden die änderungen gespeichert
 bei Snapshots werden die ganzen dateien neu gespeichert
 
 
-#Lokales repository mit remote repo verknüpfen
+# Lokales repository mit remote repo verknüpfen
   
   //add remote repository
 git remote add origin "url"
@@ -80,12 +80,12 @@ git push -all origin
 git push --set-upstream origin main
   
 
-#Clone a repo
+# Clone a repo
 
 git clone "repo"
 
 
-#Push und Pull
+# Push und Pull
 
 push: änderungen aufs remote repo speichern
 fetch: holt sich alle änderungen vom remote in die git datenbank, bringt sie aber nicht ins Verzeichnis rein
@@ -93,14 +93,14 @@ pull: fetch + update im working directory
 
 git remote show origin: information zum remote origin
 
-#Multiple remotes
+# Multiple remotes
 
 git remote -v: zeigt alle remotes
 git remote add "name" "url"
 
 Lab02
 
-#Tagging
+# Tagging
 
 git checkout "commit id"
 
@@ -133,14 +133,14 @@ Best practices:
 - Release branches können statt annotations erstellt werden (geschmackssache ob tags oder branches)
 
 
-#Branching
+# Branching
 
 Head: wo man sich gerade befindet
 bei checkout "commit id" : detached Head
 
 git branch: zeigt alle branches
 
-##Branch erstellen
+## Branch erstellen
 git branch testing
 //Head zeigt auf testing
 git switch testing (zwischen branches)
@@ -149,13 +149,13 @@ git switch testing (zwischen branches)
 //alle branches werden angezeigt mit abzweigungen
 git log --oneline --decorate --graph --all
 
-##Branch merging
+## Branch merging
 git switch main
 git merge testing
 
 git push
 
-##Merge Konflikte
+## Merge Konflikte
 
 git merge feature1
 //conflict message
@@ -167,12 +167,12 @@ git status
 git add .
 git commit -m "resolved merge conflict"
 
-##Remote Branches
+## Remote Branches
 Schnell Zugriff auf eine bestimmte commit id (Bookmarks)
 
 git push --set-upstream origin testing
 
-##Pushing, Fetching, Pulling
+## Pushing, Fetching, Pulling
 
 git push (remote) (branch)
 git push origin feature1
@@ -186,7 +186,7 @@ Best Practices:
 - oft mergen
 - main branch protecten (nur in zweigen arbeiten, gar nicht erlauben im main branch zu pushen sondern nur über pull requests)
 
-##Rebase
+## Rebase
 Bei einem Merge werden alle commits (history) erhalten
 Bei einem Rebase wird die history überschrieben
 
@@ -196,43 +196,43 @@ bei merge wird ein neuer commit mit beiden branches gemacht
 bei rebase wird die basis des branches geändert 
 git rebase main topic
 
-##Squashing von Branches
+## Squashing von Branches
 Merge commits in a single commit
 
 git rebase -i
 
 
-#Distributed Git
+# Distributed Git
 
-##Zentralisierter Workflow:
+## Zentralisierter Workflow:
 einige lokale repos auf ein remote repository
 
-##Integration manager workflow
+## Integration manager workflow
 project maintainer pushes to public repo
 
 entwickler können nicht ins "blessed repo" pushed, sonder jeder hat sein eigenes public repo
 die changes werden vom integration manager übernommen und ins blessed repo geschrieben
 
 
-##Forking a repository
+## Forking a repository
 kopie von einem repo wo man keine schreibrechte hat 
 änderungen dann mit pull request ins original speichern
 
 
-##Git branches:
+## Git branches:
 
 git flow init
 
-###Feature Branch
+### Feature Branch
 
 git flow feature start myfeature1
 
 git checkout -b christian/feature1 develop
 
-###Release Branch
+### Release Branch
 
 
-###Hotfix Branch
+### Hotfix Branch
 für Probleme 
 
 
