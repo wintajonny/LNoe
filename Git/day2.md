@@ -22,7 +22,7 @@ day2
 2. three
 3. four
 
-[my blog] (https://google.com)
+* [my blog] (https://google.com)
 
 ![text] (link to image)
 
