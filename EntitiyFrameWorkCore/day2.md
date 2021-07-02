@@ -2,9 +2,9 @@ Für DataTransfer eigene Klasse
 Book & BookDTO
 
 
-#Saving Data
+# Saving Data
 
-##ChangeTracker (context.SaveChanges();)
+## ChangeTracker (context.SaveChanges();)
 
 ChangeTracker behält Kopie des Objects und wird verglichen ==> somit weiß er wenn sich was ändert
 saveChanges() macht ein detectChanges() um Änderungen zu erkennen
