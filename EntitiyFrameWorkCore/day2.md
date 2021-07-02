@@ -89,7 +89,7 @@ Locale Transaktionen und wenn etwas Schief geht ANDU-Funktionalität
 modelBuilder.HasDefaultSchema("egalwas") //default: dbo
 
 
-#Migrations
+# Migrations
 Datenbank nicht über EnsureCreated erstellen
 
 
