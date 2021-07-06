@@ -5,3 +5,7 @@
 
 
 
+* IDisposable Interface Reference http://go.microsoft.com/fwlink/?LinkId=532372
+* Inheritance in C# http://go.microsoft.com/fwlink/?LinkId=532374
+* C# Programming Guide http://go.microsoft.com/fwlink/?LinkId=529127
+
