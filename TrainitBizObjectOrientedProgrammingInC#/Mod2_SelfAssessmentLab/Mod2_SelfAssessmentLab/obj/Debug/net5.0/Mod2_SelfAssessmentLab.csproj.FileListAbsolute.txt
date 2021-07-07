@@ -1,0 +1,16 @@
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\bin\Debug\net5.0\Mod2_SelfAssessmentLab.exe
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\bin\Debug\net5.0\Mod2_SelfAssessmentLab.deps.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\bin\Debug\net5.0\Mod2_SelfAssessmentLab.runtimeconfig.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\bin\Debug\net5.0\Mod2_SelfAssessmentLab.runtimeconfig.dev.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\bin\Debug\net5.0\Mod2_SelfAssessmentLab.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\bin\Debug\net5.0\ref\Mod2_SelfAssessmentLab.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\bin\Debug\net5.0\Mod2_SelfAssessmentLab.pdb
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.csprojAssemblyReference.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.AssemblyInfoInputs.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.AssemblyInfo.cs
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.csproj.CoreCompileInputs.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\ref\Mod2_SelfAssessmentLab.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.pdb
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod2_SelfAssessmentLab\Mod2_SelfAssessmentLab\obj\Debug\net5.0\Mod2_SelfAssessmentLab.genruntimeconfig.cache

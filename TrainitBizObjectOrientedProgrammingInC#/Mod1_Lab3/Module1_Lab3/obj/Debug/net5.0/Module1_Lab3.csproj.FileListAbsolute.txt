@@ -1,0 +1,16 @@
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\bin\Debug\net5.0\Module1_Lab3.exe
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\bin\Debug\net5.0\Module1_Lab3.deps.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\bin\Debug\net5.0\Module1_Lab3.runtimeconfig.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\bin\Debug\net5.0\Module1_Lab3.runtimeconfig.dev.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\bin\Debug\net5.0\Module1_Lab3.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\bin\Debug\net5.0\ref\Module1_Lab3.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\bin\Debug\net5.0\Module1_Lab3.pdb
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.csprojAssemblyReference.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.AssemblyInfoInputs.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.AssemblyInfo.cs
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.csproj.CoreCompileInputs.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\ref\Module1_Lab3.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.pdb
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Module1_Lab3\Module1_Lab3\obj\Debug\net5.0\Module1_Lab3.genruntimeconfig.cache

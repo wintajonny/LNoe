@@ -1,0 +1,16 @@
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\bin\Debug\net5.0\Mod1_Lab1.exe
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\bin\Debug\net5.0\Mod1_Lab1.deps.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\bin\Debug\net5.0\Mod1_Lab1.runtimeconfig.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\bin\Debug\net5.0\Mod1_Lab1.runtimeconfig.dev.json
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\bin\Debug\net5.0\Mod1_Lab1.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\bin\Debug\net5.0\ref\Mod1_Lab1.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\bin\Debug\net5.0\Mod1_Lab1.pdb
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.csprojAssemblyReference.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.AssemblyInfoInputs.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.AssemblyInfo.cs
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.csproj.CoreCompileInputs.cache
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\ref\Mod1_Lab1.dll
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.pdb
+C:\github\LNoe\TrainitBizObjectOrientedProgrammingInC#\Mod1_Lab1\Mod1_Lab1\obj\Debug\net5.0\Mod1_Lab1.genruntimeconfig.cache
