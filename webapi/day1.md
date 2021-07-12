@@ -23,7 +23,7 @@ response.content.ReadAsStringAsync()
 JsonSerializerOptions options = new(){
   PropertyNameCaseInsensitive = true;
 };
-System.Text.Json.JsonSerializer.Deserialize<IEnumerable<Book>>(jsonString, options);
+System.Text.Json.JsonSerializer.Deserialize/\IEnumerable/\Book/\/\(jsonString, options);
 
 ## XML
 services.AddController( options => options.RespectBrowserAcceptHeader = true).AddXmlSerializer...
@@ -33,13 +33,21 @@ services.AddController( options => options.RespectBrowserAcceptHeader = true).Ad
 Dokumentation:
 /// <summary>
 /// ...
-/// </summary>
+/// </summary>          
 
 
+# Entity Framework Core
 
+BooksContext.cs : DbContext
 
+NuGet SqlServer installieren
 
+Constructor mit (DBContextOptions options) : base (options)
+DBSet/\Books/\ Book => Set/\Book/\();
 
+Bei ConfigureServices hinzufügen: AddDbContext/\BooksContext/\(options => options.useSqlServer(stringToDb))};
+
+Add Api Controller with actions, using Entity Framework
 
 
 
