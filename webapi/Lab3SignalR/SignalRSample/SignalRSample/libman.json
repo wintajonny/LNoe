@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "@microsoft/signalr@5.0.8",
+      "destination": "wwwroot/libs/signalr",
+      "files": [ "dist/browser/signalr.js" ]
+    }
+  ]
+}
