@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31423.177
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbientTransactions", "AmbientTransactions\AmbientTransactions.csproj", "{2A56AFC3-138C-4607-B294-529C5CCEFFDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A56AFC3-138C-4607-B294-529C5CCEFFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A56AFC3-138C-4607-B294-529C5CCEFFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A56AFC3-138C-4607-B294-529C5CCEFFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A56AFC3-138C-4607-B294-529C5CCEFFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF475C0C-46D8-4DDA-9A04-567817A7CE06}
+	EndGlobalSection
+EndGlobal
