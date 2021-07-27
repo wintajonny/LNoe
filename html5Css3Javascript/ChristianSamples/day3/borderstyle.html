@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+    #div1:before /* Creates ribbon effect on active link */ {
+        position: absolute;
+        top: 6rem;
+        display: block;
+        height: 0;
+        width: 0;
+        margin-left: -1.9rem;
+        border-top: 2rem solid #8d0606;
+        border-right: 6.5rem solid transparent;
+        content: "";
+    }
+    
+    #div1:after /* Creates ribbon effect on active link */ {
+        position: absolute;
+        display: block;
+        height: 0;
+        width: 0;
+        margin-left: 4.3rem;
+        border-top: 4rem solid #8d0606;
+        border-left: 8rem solid blue;
+        border-bottom: 8rem solid yellow;
+        border-right: 8rem solid green;
+        content: "";
+    }
+    </style>
+
+    <title></title>
+</head>
+<body>
+<div id="div1">mydiv</div>
+
+</body>
+</html>

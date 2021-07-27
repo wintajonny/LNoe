@@ -1,0 +1,18 @@
+﻿body {
+}
+
+.dragging {
+    background-color: yellow;
+}
+
+.drop {
+    background-color: lightgreen;
+    width: 300px;
+    height: 200px;
+}
+
+.drop2 {
+    background-color: lightblue;
+    width: 300px;
+    height: 200px;
+}

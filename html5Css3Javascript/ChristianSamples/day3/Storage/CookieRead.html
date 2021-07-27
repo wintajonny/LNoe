@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            document.getElementById("button1").onclick = function () {
+                var cookie = window.document.cookie;
+                document.getElementById("output1").innerText = cookie;
+            };
+        });
+    </script>
+    
+    <button id="button1">read cookie</button>
+    <br />
+    <div id="output1" />
+</body>
+</html>

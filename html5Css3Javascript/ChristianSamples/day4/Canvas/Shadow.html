@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let canvas = document.querySelector("canvas");
+      var ctx = canvas.getContext('2d');
+
+      ctx.translate(40, 40);
+
+      ctx.shadowColor = 'rgba(0, 0, 0, 2)';
+      ctx.shadowOffsetX = 12;
+      ctx.shadowOffsetY = -15;
+      ctx.shadowBlur = 8 ;
+
+
+      ctx.fillStyle = "rgb(255, 0, 0)";
+      ctx.fillRect(0, 0, 100, 100);
+      ctx.strokeStyle = "#00f";
+      ctx.strokeRect(25, 25, 50, 50);
+    });
+  </script>
+  <canvas>canvas not supported</canvas>
+
+</body>
+</html>

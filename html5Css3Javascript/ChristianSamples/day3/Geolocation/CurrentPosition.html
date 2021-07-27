@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="../Scripts/jquery-2.1.0.js"></script>
+  <script>
+    $(function () {
+      $("#getPosition").click(function () {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            function (position) {
+              var coords = position.coords;
+              log("lat: " + coords.latitude + " long: " + coords.longitude);
+              log("alt: " + coords.altitude);
+              log("accuracy: " + coords.accuracy);
+              log("heading: " + coords.heading);
+              log("speed: " + coords.speed);
+            },
+            function (ev) {
+              log("error " + ev.message);
+            },
+            {
+              enableHighAccuracy: true
+            });
+        }
+      });
+    });
+
+    function log(text) {
+      $("#output").append(text + "<br />");
+    }
+  </script>
+</head>
+<body>
+  <button id="getPosition">Get Position</button>
+  <div id="output"></div>
+</body>
+</html>

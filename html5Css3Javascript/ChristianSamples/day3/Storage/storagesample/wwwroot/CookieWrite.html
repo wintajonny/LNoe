@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("button1").onclick = function () {
+                var value = document.getElementById("text1").value;
+                var date = new Date();
+                date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
+                window.document.cookie = "mycookie=" + value + ";expires=" + date.toGMTString();
+            };
+            document.getElementById("button2").onclick = function () {
+                var value = document.getElementById("text2").value;
+                var date = new Date();
+                date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
+                window.document.cookie = "mycookie2=" + value + ";expires=" + date.toGMTString();
+            }
+        });
+    </script>
+
+    <input type="text" id="text1" />
+    <br />
+    <button id="button1">Write cookie</button>
+    <br />
+    <input type="text" id="text2" />
+    <br />
+    <button id="button2">Write cookie 2</button>
+</body>
+</html>

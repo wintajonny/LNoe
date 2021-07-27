@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script>
+    function drawTriangle(ctx) {
+      ctx.beginPath();
+      ctx.moveTo(100, 0);
+      ctx.lineTo(0, 100);
+      ctx.lineTo(200, 100);
+      ctx.rotate(45);
+      ctx.fill();
+    }
+
+    function drawCircle(ctx) {
+      ctx.beginPath();
+      ctx.arc(150, 150, 60, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.fill();
+    }
+
+    function scale() {
+      let ctx = document.querySelector("canvas").getContext("2d");
+      ctx.save();
+      ctx.fillStyle = "green";
+      ctx.scale(3, 0.5);
+      drawCircle(ctx);
+      ctx.restore();
+    }
+
+    function translate() {
+      let ctx = document.querySelector("canvas").getContext("2d");
+      ctx.save();
+      ctx.fillStyle = "green";
+      ctx.translate(300, 50);
+      drawCircle(ctx);
+      drawTriangle(ctx);
+      ctx.restore();
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      let canvas = document.querySelector("canvas");
+      let ctx = canvas.getContext('2d');
+      ctx.fillStyle = "red";
+      ctx.moveTo(300, 200);
+      drawCircle(ctx);
+      drawTriangle(ctx);
+
+      document.getElementById("scale").onclick = scale;
+      document.getElementById("translate").onclick = translate;
+
+    });
+  </script>
+
+  <canvas width="1600" height="600"></canvas>
+  <button id="translate">translate</button>
+  <button id="scale">scale</button>
+</body>
+</html>

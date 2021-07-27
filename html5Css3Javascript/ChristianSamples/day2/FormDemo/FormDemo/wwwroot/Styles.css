@@ -1,0 +1,18 @@
+﻿body {
+}
+
+:valid {
+    border: solid lime;
+    font-weight: normal;
+}
+
+:invalid {
+    border: solid red;
+    font-weight: bold;
+}
+:required {
+    background-color: yellow;
+}
+:optional {
+    background-color: lightgray;
+}

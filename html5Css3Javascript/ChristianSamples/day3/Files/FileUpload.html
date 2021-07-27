@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="../Scripts/jquery-2.1.0.js"></script>
+  <script>
+
+   
+    function handleFiles(files) {
+      for (var i = 0; i < files.length; i++) {
+        log("dealing with " + files[i].name);
+      }
+    }
+    function log(text) {
+      jQuery("#output").append(text + "<br />");
+//      $("#output").append(text + "<br />");
+    }
+
+  </script>
+</head>
+<body>
+  <input type="file" id="input" onchange="handleFiles(this.files)">
+  <br />
+  <input type="file" id="File1" multiple onchange="handleFiles(this.files)">
+  <br />
+
+  <output id="output"></output>
+</body>
+</html>

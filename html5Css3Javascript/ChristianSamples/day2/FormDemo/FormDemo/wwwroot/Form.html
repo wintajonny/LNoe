@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+
+
+</head>
+
+<body>
+    <script src="scripts/jquery.js"></script>
+    <script>
+        $(function () {
+            $("input").before(function () {
+                return "<div>" + $(this).attr("type") + "</div>";
+            });
+            $("input").attr("required", "required");
+
+            //$("input[name=e1]").focus();
+        });
+    </script>
+
+    <input type="text" name="outsidetext" form="form1" autofocus />
+    <form method="get" action="Form.html" id="form1">
+        <select name="favoriteCar" required>
+            <option>Ferrari</option>
+            <option value="Chevy">Chevrolet</option>
+            <option>McLaren F1</option>
+        </select><br />
+        <label for="t1">Enter a text</label>
+        <input type="text" name="t1" id="t1" required />
+        <input type="color" name="c1" required />
+        <input type="date" name="d1" required />
+        <input type="datetime" name="d2" required />
+        <input type="datetime-local" name="d3" />
+        <input type="email" name="e1" required />
+        <input type="month" name="m1" />
+        <input type="number" name="n1" />
+        <input type="range" min="20" max="200" name="r1" />
+        <input type="search" name="s1" />
+        <input type="tel" name="t2" autofocus />
+        <input type="time" name="t3" />
+        <input type="url" name="u1" />
+        <input type="week" name="w1" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

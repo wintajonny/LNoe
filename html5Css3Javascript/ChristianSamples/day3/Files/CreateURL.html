@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="../Scripts/jquery-2.1.0.js"></script>
+  <script>
+
+    function handleFiles(files) {
+      for (var i = 0; i < files.length; i++) {
+        log("dealing with " + files[i].name);
+        var url = window.URL.createObjectURL(files[i]);
+        log("URL: " + url);
+      }
+    }
+    function log(text) {
+      $("#output").append(text + "<br />");
+    }
+
+  </script>
+</head>
+<body>
+    <input type="file" id="input" onchange="handleFiles(this.files)">
+  <br />
+ <button id="create" type="button">Create URL</button>
+  <output id="output"></output>
+</body>
+</html>

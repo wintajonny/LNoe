@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let button1 = document.getElementById('button1');
+            button1.onclick = function () {
+                var myWorker = new Worker("SimpleWorker.js");
+                myWorker.onmessage = function (e) {
+                    alert(e.data);
+                };
+            }
+
+            let button2 = document.getElementById('button2');
+            button2.onclick = function () {
+                var worker = new Worker("SimpleWorker2.js");
+                worker.onmessage = function (e) {
+                    log(e.data);
+                }
+            };
+        });
+
+        function log(text) {
+            let output = document.getElementById('output');
+            output.innerHTML += `${text}<br />`;
+        }
+    </script>
+    <button id="button1" type="button">Start Worker</button>
+    <br />
+    <button id="button2" type="button">Start Worker 2</button>
+    <div id="output"></div>
+</body>
+</html>

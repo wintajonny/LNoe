@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="../Scripts/jquery-2.1.0.js"></script>
+  <script>
+    function handleFiles(files) {
+      for (var i = 0; i < files.length; i++) {
+        log("dealing with " + files[i].name);
+      }
+    }
+    function log(text) {
+      $("#output").append(text + "<br />");
+    }
+
+    $(function () {
+      var fileSelect = document.getElementById("fileSelect");
+      var fileElem = document.getElementById("fileElem");
+
+      fileSelect.addEventListener("click", function (e) {
+        if (fileElem) {
+          fileElem.click();
+        }
+        e.preventDefault();
+      }, false);
+    });
+
+  </script>
+</head>
+<body>
+  <br />
+  <input type="file" id="fileElem" multiple accept="image/*" style="display: none"
+    onchange="handleFiles(this.files)">
+  <a href="#" id="fileSelect">Select some files</a>
+  <br />
+  <output id="output"></output>
+</body>
+</html>

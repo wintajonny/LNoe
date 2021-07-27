@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var img = new Image();
+      img.src = 'Matthias.jpg';
+      img.onload = function() {
+        let canvas = document.querySelector("canvas");
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, 3072, 4608, 0, 0, 300, 500);
+      };
+    });
+  </script>
+  <canvas width="600" height="400"></canvas>
+</body>
+</html>

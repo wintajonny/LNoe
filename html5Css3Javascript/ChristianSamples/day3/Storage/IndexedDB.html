@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+
+</head>
+<body>
+    <script src="../Scripts/jquery-2.1.0.js"></script>
+
+    <script>
+       
+      
+        var DB_NAME = "Restaurant";
+        var TABLE_Weekly = "Weekly";
+        var TABLE_Cards = "Cards";
+        var TABLE_Menus = "Menus";
+        var version = 1;
+        var db = null;
+
+
+        $(function () {
+            $("#delete").click(deleteDatabase);
+            $("#create").click(openDatabase);
+            $("#read").click(readMenus);
+            $("#save").click(addMenu);
+        });
+
+        function S4() {
+            return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+        }
+
+        function newGuid() {
+            return (S4() + S4() + "-" + S4() + "-4" + S4().substr(0, 3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
+        }
+        
+        function getMenu() {
+            var menu = {
+                date: $("#day").val(),
+                name: $("#name").val(),
+                category: $("#category").val()
+            };
+            return menu;
+        }
+
+        function addMenu() {
+            var tx = db.transaction(TABLE_Weekly, "readwrite");
+
+            tx.onabort = function (ev) {
+                log("tx abort");
+            };
+            tx.onerror = function (ev) {
+                log("tx error");
+            };
+            tx.oncomplete = function (ev) {
+                log("tx complete");
+            };
+            var store = tx.objectStore(TABLE_Weekly);
+            var rq = store.put(getMenu());
+            rq.onsuccess = function (ev) {
+                log("written");
+            }
+        }
+
+        function readMenus() {
+            var tx = db.transaction(TABLE_Weekly, "readonly");
+            var store = tx.objectStore(TABLE_Weekly);
+            var data = [];
+
+            var rq = store.openCursor();
+            rq.onsuccess = function (ev) {
+                var cursor = ev.target.result;
+                if (cursor) {
+                    data.push(cursor.value);
+                    var menu = cursor.value;
+                    log("read " + menu.id + " " + menu.date + " " + menu.name + " " + menu.category);
+                    cursor.continue();
+                }
+                else {
+                    log("read all data now");
+                }
+            };
+        }
+
+        function openDatabase() {
+
+            var rq = indexedDB.open(DB_NAME, version);
+
+            rq.onerror = function (ev) {
+                log("failed to open database");
+            };
+
+            rq.onsuccess = function (ev) {
+                log("successfully opened database");
+                db = rq.result;
+            };
+
+            rq.onupgradeneeded = function (ev) {
+                log("upgrade needed");
+
+                db = rq.result;
+                var weeklystore = db.createObjectStore(TABLE_Weekly, { keyPath: "id", autoIncrement: true });
+                weeklystore.createIndex("by_date", "date", { unique: false });
+
+                var cardstore = db.createObjectStore(TABLE_Cards, { keyPath: "id", autoIncrement: true });
+                log("changed the schema");
+            };
+        }
+
+        function deleteDatabase() {
+            if (db) {
+                db.close();
+                db = null;
+            }
+
+            var rq = indexedDB.deleteDatabase(DB_NAME);
+            rq.onsuccess = function (ev) {
+                log("deleted the database " + DB_NAME);
+            }
+            rq.onerror = function (ev) {
+                log("error deleting database " + DB_NAME);
+            }
+        }
+
+
+        function log(text) {
+            $("#output").append(text + "<br />");
+        }
+    </script>
+
+    <h1>Indexed DB</h1>
+    <p>
+        Day
+        <input type="date" id="day" />
+    </p>
+    <p>
+        Name:
+        <input type="text" id="name" />
+    </p>
+    <p>
+        Category:
+        <select id="category">
+            <option value="Meat" selected>Meat</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Fish">Fish</option>
+        </select>
+    </p>
+    <input type="button" id="create" value="Open or Create Database" />
+    <input type="button" id="save" value="Save" />
+    <input type="button" id="read" value="Read" />
+    <input type="button" id="delete" value="Delete Database" />
+    <div id="output"></div>
+</body>
+</html>

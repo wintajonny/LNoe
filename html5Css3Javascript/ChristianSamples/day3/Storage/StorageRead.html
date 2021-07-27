@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="../Scripts/jquery-2.1.0.js"></script>
+    <script>
+        $(function () {
+            $("#button1").click(function () {
+                var output = $("output");
+                var d1 = sessionStorage.getItem("mydata1");
+                output.append("session " + d1 + "<br />");
+                var d2 = sessionStorage["mydata2"];
+                output.append("session " + d2 + "<br />");
+                var d3 = sessionStorage.mydata3;
+                output.append("session " + d3 + "<br />");
+            });
+
+            $("#button2").click(function () {
+                var output = $("output");
+                var d1 = localStorage.getItem("mydata4");
+                output.append("local " + d1 + "<br />");
+                var d2 = localStorage["mydata5"];
+                output.append("local " + d2 + "<br />");
+                var d3 = localStorage.mydata6;
+                output.append("local " + d3 + "<br />");
+               
+            });
+
+            $("#button3").click(function () {
+                var output = $("output");
+                for (var key in localStorage) {
+                    output.append(key + "<br />");
+                }
+            });
+
+            $("#button4").click(function () {
+                localStorage.clear();
+            });
+
+
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+    <button id="button1">Read session storage</button>
+    <button id="button2">Read local storage</button>
+    <button id="button3">Show all storage</button>
+    <button id="button4">Clear</button>
+    <br />
+    <output></output>
+</body>
+</html>

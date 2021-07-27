@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var iframes = window.frames;
+
+      window.onmessage = function (e) {
+        alert("received message in main");
+        if (e.ports.length > 0) {
+          iframes[1].postMessage("portopen", "*", e.ports);
+        }
+      };
+    });
+</script>
+</head>
+<body>
+  <p>
+    Main page</p>
+  <iframe id="frame1" src="IFrame1.html"></iframe>
+  <iframe id="frame2" src="IFrame2.html"></iframe>
+</body>
+</html>

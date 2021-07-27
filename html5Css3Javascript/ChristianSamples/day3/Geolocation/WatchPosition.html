@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="../Scripts/jquery-2.1.0.js"></script>
+    <script>
+        $(function () {
+            var watchId;
+
+            $("#watchPosition").click(function () {
+                if (navigator.geolocation) {
+                    watchId = navigator.geolocation.watchPosition(function (position) {
+                        var time = new Date();
+                        log(time.toTimeString());
+                        var coords = position.coords;
+                        log("lat: " + coords.latitude + " long: " + coords.longitude);
+                        log("alt: " + coords.altitude);
+                        log("accuracy: " + coords.accuracy);
+                        log("heading: " + coords.heading);
+                        log("speed: " + coords.speed);
+                    }, function (error) {
+                        log(error);
+                    },
+                    {
+                        enableHighAccuracy: true
+                    });
+                }
+            });
+
+            $("#clearWatch").click(function () {
+                if (navigator.geolocation) {
+                    if (watchId) {
+                        navigator.geolocation.clearWatch(watchId);
+                    }
+                }
+                else {
+                    log("your browser does not support geolocation");
+                }
+            });
+        });
+
+        function log(text) {
+            $("#output").append(text + "<br />");
+        }
+    </script>
+</head>
+<body>
+    <button id="watchPosition">Watch Position</button><br />
+    <button id="clearWatch">Clear Watch</button><br />
+    <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Sample</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let canvas = document.querySelector("canvas");
+      if (!!(canvas.getContext && canvas.getContext('2d'))) {
+        var ctx = canvas.getContext('2d');
+        ctx.font = "40px Impact";
+        ctx.strokeText("hello html5", 10, 70);
+      }
+    });
+  </script>
+</head>
+<body>
+  <canvas>canvas not supported</canvas>
+
+</body>
+</html>

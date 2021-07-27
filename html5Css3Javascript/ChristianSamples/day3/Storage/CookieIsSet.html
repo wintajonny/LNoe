@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="Styles.css" rel="stylesheet" />
+    <title></title>
+
+    <script>
+        window.onload = function (e) {
+            
+            document.querySelector("div button").onclick = function () {
+                var date = new Date();
+                date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
+                window.document.cookie = "allowcookies=true; expires=" + date.toGMTString();
+            }
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i].trim();
+                    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+                }
+                return "";
+            }
+
+            showNotification();
+
+            function showNotification() {
+                var result = getCookie("allowcookies");
+                if (result) {
+                    document.getElementById("usecookies").classList.add("hide");
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="usecookies">
+        This site uses cookies to remember if this notification should be shown again. Continue to use this site only if you accept cookies.
+        <button>Accept</button>
+    </div>
+
+</body>
+</html>

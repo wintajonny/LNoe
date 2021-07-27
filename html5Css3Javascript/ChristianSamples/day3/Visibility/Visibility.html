@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <style>
+    #iframe1
+    {
+      height: 100px;
+      border: 5px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var hidden, visibilityChange;
+      if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support
+        hidden = "hidden";
+        visibilityChange = "visibilitychange";
+      } else if (typeof document.msHidden !== "undefined") {
+        hidden = "msHidden";
+        visibilityChange = "msvisibilitychange";
+      } else if (typeof document.webkitHidden !== "undefined") {
+        hidden = "webkitHidden";
+        visibilityChange = "webkitvisibilitychange";
+      }
+
+      var output = document.getElementById("output");
+      document.addEventListener(visibilityChange, handleVisibilityChange, false);
+
+      output.innerHTML += "handler registered";
+    });
+
+    function handleVisibilityChange() {
+      var output = document.getElementById("output");
+
+      if (document.visibilityState ===  hidden) {
+        output.innerHTML += "<br />hidden";
+      }
+      else {
+        output.innerHTML += "<br />not hidden";
+      }
+
+
+    }
+
+  </script>
+
+  <div id="output"></div>
+  <iframe id="iframe1" src="InnerPage.html">
+
+  </iframe>
+</body>
+</html>

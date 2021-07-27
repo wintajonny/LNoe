@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script>
+    var hidden, visibilityChange;
+    if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support
+      hidden = "hidden";
+      visibilityChange = "visibilitychange";
+    } else if (typeof document.msHidden !== "undefined") {
+      hidden = "msHidden";
+      visibilityChange = "msvisibilitychange";
+    } else if (typeof document.webkitHidden !== "undefined") {
+      hidden = "webkitHidden";
+      visibilityChange = "webkitvisibilitychange";
+    }
+
+    window.addEventListener("DOMContentLoaded", function() {
+      var output = document.getElementById("output");
+      document.addEventListener(visibilityChange, handleVisibilityChange, false);
+
+      output.innerHTML += "handler registered";
+    });
+
+    function handleVisibilityChange() {
+      var output = document.getElementById("output");
+
+      if (document.visibilityState === "hidden") {
+        output.innerHTML += "<br />hidden";
+      }
+      else {
+        output.innerHTML += "<br />not hidden";
+      }
+
+
+    }
+
+  </script>
+</head>
+<body>
+  <div id="output"></div>
+</body>
+</html>

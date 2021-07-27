@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    #drop
+    {
+      height: 100px;
+      width: 200px;
+      border: 5px solid #ccc;
+    }
+  </style>
+  <script src="../Scripts/jquery-2.1.0.js"></script>
+  <script>
+    function makedrop(e) {
+      e.preventDefault();
+    }
+
+    function dosomething() {
+      alert("drop");
+    }
+
+
+</script>
+  <script>
+    $(function () {
+      $("#drop").bind("dragenter", makedrop).bind("dragleave", makedrop).bind("drop", dosomething);
+
+    });
+</script>
+</head>
+<body>
+  <h1>
+    Drag demo</h1>
+  <p>some text</p>
+  <img src="../Images/Penguins.jpg" width="300" height="300" alt="@penguin" draggable="true" />
+  <div id="drop" dropzone="copy s:text/plain f:image/png">
+
+  </div>
+</body>
+</html>

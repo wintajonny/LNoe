@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="../Scripts/jquery-2.1.0.js"></script>
+  <script>
+    $(function () {
+      if (window.sessionStorage) {
+        log("session storage supported");
+      }
+      if (window.localStorage) {
+        log("local storage supported");
+      }
+
+      $("#writeSession").click(function () {
+        sessionStorage.setItem($("#key").val(), $("#value").val());
+      });
+
+      $("#writeLocal").click(function () {
+        localStorage.setItem($("#key").val(), $("#value").val());
+      });
+
+      $("#readSession").click(function () {
+        var item = sessionStorage.getItem($("#key").val());
+        log("read " + item);
+      });
+
+      $("#readLocal").click(function () {
+        var item = localStorage.getItem($("#key").val());
+        log("read " + item);
+      });
+    });
+
+    function log(text) {
+      $("#output").append(text + "<br />");
+    }
+  </script>
+</head>
+<body>
+  <p>
+    Key:
+    <input id="key" type="text" />
+  </p>
+  <p>
+    Value:
+    <input id="value" type="text" />
+  </p>
+  <button type="button" id="writeSession">Write Session</button>
+  <button type="button" id="writeLocal">Write Local</button>
+  <button type="button" id="readSession">Read Session</button>
+  <button type="button" id="readLocal">Read Local</button>
+  <output id="output"></output>
+</body>
+</html>

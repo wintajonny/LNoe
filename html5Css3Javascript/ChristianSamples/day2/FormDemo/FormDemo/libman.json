@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    { "library": "jquery@3.5.0",
+      "destination": "wwwroot/scripts/",
+      "files": ["jquery.js", "jquery.min.js", "jquery.min.map"]
+    }
+  ]
+}

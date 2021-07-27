@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>IFrame2</title>
+  <script>
+    var port;
+    document.addEventListener('DOMContentLoaded', function() {
+      window.onmessage = function (e) { 
+        port = e.ports[0];
+        // e.ports[0].postMessage("sending from iframe2 " + $("#text2").val());
+      };
+
+      let button1 = document.getElementById('button1');
+      button1.onclick = function() {
+        let text1 = document.getElementById('text2').value;
+        port.postMessage(`sending from iframe2 ${text1}`);
+      };
+    });
+
+</script>
+</head>
+<body style="background-color: #00ff21">
+  <h1>
+    IFrame 2</h1>
+  <input type="text" id="text2" />
+  <button id="button1">send</button>
+</body>
+</html>

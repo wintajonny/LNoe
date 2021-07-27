@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var button1 = document.getElementById('button1');
+        button1.onclick = function() {
+          alert("create a channel");
+          var channel = new MessageChannel();
+          window.parent.postMessage("iframe1hasloaded", "*", [channel.port2]);
+          
+          channel.port1.addEventListener("message", function (e) {
+            alert("received in IFrame1 " + e.data);
+          }, false);
+          channel.port1.start();
+        };
+      });
+</script>
+</head>
+<body style="background-color: #ffd800">
+  <h1>
+    IFrame 1</h1>
+  <button id="button1">create channel</button>
+</body>
+</html>
